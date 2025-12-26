@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Products</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    background-color: #eaeded;
+    color: #111;
+}
+header {
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0066c0;
+}
+
+.product-card .price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #B12704; 
+    margin-bottom: 15px;
+}
+
+.product-card .description {
+    font-size: 14px;
+    color: #565959;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #ff9900; 
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #ea8a00;
+}
+
+/* Footer */
+footer {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">amazon</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Amazon">
+                <button>Go</button>
+            </div>
+            <nav>
+                <a href="#">Returns & Orders</a>
+                <a href="#">Sign In</a>
+                <a href="#">Cart</a>
+            </nav>
+        </div>
+    </header>
+    <main class="product-grid">
+        <div class="product-card">
+            <img src="C:\Users\tanna\OneDrive\Pictures\8be43795b2137ef18fc37a1c748c45521fa94b54_original.jpeg" alt="Product 1">
+            <h2>Headphones</h2>
+            <p class="price">$19.99</p>
+            <p class="description">A short description of the item goes here.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\tanna\OneDrive\Pictures\1_ef1e8185-792a-43f0-81f7-60540ea73e2e.webp" alt="Product 2">
+            <h2>Facewash</h2>
+            <p class="price">$45.50</p>
+            <p class="description">Another product description goes right here.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\tanna\OneDrive\Pictures\81w+t6t-BDL._AC_UY1100_.jpg" alt="Product 3">
+            <h2>T-Shirt</h2>
+            <p class="price">$99.00</p>
+            <p class="description">This item is a bestseller and highly rated.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\tanna\OneDrive\Pictures\vivo-y400-pro-front-back-2.png" alt="Product 4">
+            <h2>Mobile Phones</h2>
+            <p class="price">$12.25</p>
+            <p class="description">A budget friendly option for everyone.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Amazon</p>
+    </footer>
+
+</body>
+</html>
